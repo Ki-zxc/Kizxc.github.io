@@ -20,6 +20,34 @@
         .carousel {
             height: 250px;
         }
+        .card {
+            position: relative;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            transition: transform 0.3s;
+        }
+
+        .custom-card:hover {
+            transform: scale(1.05);
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        /* Custom styles for the card title */
+        .card-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        /* Custom styles for the card description */
+        .card-description {
+            font-size: 16px;
+        }
+
+       
+    </style>
     </style>
 </head>
 
@@ -46,7 +74,7 @@
             </ul>
         </div>
     </nav>
-    <ul class="sidenav" id="mobile-links">
+     <ul class="sidenav" id="mobile-links">
         <li><a href="index.html">HOME</a></li>
         <li><a href="Planets.html">ABOUT</a></li>
         <li><a href="contact.html">CONTACT</a></li>
@@ -56,55 +84,17 @@
         <div class="video-container" style="max-width:100%; max-height: 450px;">
             <video class="responsive-video " autoplay loop muted>
                 <source src="img2/140202 (Original).mp4" type="video/mp4">
-                <!-- Add additional source elements for other formats if needed -->
+          
 
             </video>
         </div>
     </div>
-    <!-- 
-    
-        <div class="slider ">
-            <ul class="slides">
-                <li>
-                    <img src="img2/wallpaperflare.com_wallpaper (1).jpg">
-                    <div class="caption center-align">
-                        <h3>Slide 1</h3>
-                        <h5>This is a sample slide.</h5>
-                    </div>
-                </li>
-                <li>
-                    <img src="img2/wallpaperflare.com_wallpaper (1).jpg">
-                    <div class="caption left-align">
-                        <h3>Slide 2</h3>
-                        <h5>Another sample slide.</h5>
-                    </div>
-                </li>
-                <li>
-                    <img src="img2/wallpaperflare.com_wallpaper (1).jpg">
-                    <div class="caption right-align">
-                        <h3>Slide 3</h3>
-                        <h5>And one more.</h5>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
-    
-     <div class="carousel "> <img src="img2/wallpaperflare.com_wallpaper (1).jpg " alt="">
-        <a class="carousel-item" href="#one!"><img src="img2/wallpaperflare.com_wallpaper.jpg"></a>
-        <a class="carousel-item" href="#two!"><img src="img2/wallpaperflare.com_wallpaper (1).jpg"></a>
-        <a class="carousel-item" href="#one!"><img src="img2/wallpaperflare.com_wallpaper.jpg"></a>
-        <a class="carousel-item" href="#one!"><img src="img2/wallpaperflare.com_wallpaper (1).jpg"></a>
-        <a class="carousel-item" href="#one!"><img src="img2/wallpaperflare.com_wallpaper.jpg"></a>
-        <a class="carousel-item" href="#one!"><img src="img2/wallpaperflare.com_wallpaper (1).jpg"></a>
-      </div>  -->
-
     </div>
     </div>
     <div class="container">
         <div class="row">
             <div class="col s12 m6 ">
-                <div class="card white responsive-video">
+                <div class="card white">
 
                     <span class="card-title"></span>
 
@@ -121,7 +111,7 @@
                 </div>
             </div>
             <div class="col s12 m6 ">
-                <div class="card white responsive-video">
+                <div class="card white">
 
                     <span class="card-title"></span>
 
@@ -394,7 +384,7 @@
 
                     </div>
                     <div class="footer-col">
-                        <h4>Support</h4>
+                        <h4>Support </h4>
                         <ul>
                             <li><a href="#" class="href">Help Center</a></li>
                             <li><a href="#" class="href">Privacy Policy</a></li>
@@ -422,7 +412,7 @@
                 $('.modal').modal();
             });
 
-            // Initialize Materialize components (e.g., navbar, dropdowns)
+
             document.addEventListener('DOMContentLoaded', function () {
                 M.AutoInit();
             });
@@ -432,10 +422,10 @@
             document.addEventListener('DOMContentLoaded', function () {
                 var slider = document.querySelector('.slider');
                 M.Slider.init(slider, {
-                    indicators: false, // Show slide indicators
-                    height: 650,      // Set the height of the slider
-                    transition: 150,  // Set the transition duration (in milliseconds)
-                    interval: 2000    // Set the autoplay interval (in milliseconds)
+                    indicators: false, 
+                    height: 650,      
+                    transition: 150,  
+                    interval: 2000   
 
                 });
             });

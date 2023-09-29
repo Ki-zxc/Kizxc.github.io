@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unique Hover Card</title>
+    <!-- Add Materialize CSS and JavaScript CDN links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <style>
+        /* Custom styles for the card */
+        .custom-card {
+            position: relative;
+            width: 300px;
+            height: 400px;
+            background-color: #ff5733;
+            color: #fff;
+            transition: transform 0.3s;
+        }
+
+        .custom-card:hover {
+            transform: scale(1.05);
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        /* Custom styles for the card title */
+        .card-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        /* Custom styles for the card description */
+        .card-description {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m6">
+                <div class="card custom-card hoverable">
+                    <div class="card-content">
+                        <span class="card-title">Unique Hover Card</span>
+                        <p class="card-description">This is a custom hover card design using Materialize CSS.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+In this example:
+
+We start with a basic Materialize CSS card component.
+Custom styles are applied to the card using the .custom-card class to change its background color and add a hover effect.
+The transform property is used for the hover effect to scale the card slightly when hovered over.
+Custom styles are applied to the card title and description using the .card-title and .card-description classes, respectively, to adjust their font sizes and spacing.
+You can further customize this design by changing the colors, fonts, and other styles to match your project's unique branding and requirements. This is just one example, and you can create even more unique designs by exploring different combinations of CSS styles and Materialize CSS classes.
+
+
+
+
+
